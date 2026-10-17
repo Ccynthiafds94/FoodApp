@@ -1,0 +1,93 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: 150px;
+}
+.navbar-menu{
+    display : flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 20px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: #fff4f2;
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar-seacrh-icon{
+    position: relative;
+}
+.navbar-search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+}
+.navbar-search-button img {
+    width: 22px;
+    height: 22px;
+}
+.navbar-search-input {
+    width: 170px;
+    padding: 9px 12px;
+    border: 1px solid #d9dce5;
+    border-radius: 20px;
+    outline: none;
+}
+.navbar-search-input:focus {
+    border-color: tomato;
+}
+.navbar-seacrh-icon .cart-count {
+    position: absolute;
+    min-width: 18px;
+    height: 18px;
+    background-color: tomato;
+    border-radius: 10px;
+    top: -8px;
+    right: -8px;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 700px) {
+    .navbar-search-input {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 5;
+        background: white;
+    }
+    .navbar-right {
+        gap: 18px;
+    }
+}

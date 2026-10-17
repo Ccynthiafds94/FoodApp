@@ -1,0 +1,66 @@
+.restaurant-selection {
+  margin-top: 34px;
+}
+
+.restaurant-selection h2 {
+  margin-bottom: 16px;
+  color: #262626;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.restaurant-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  min-height: 112px;
+  padding: 16px;
+  border: 1px solid #eee2d9;
+  border-radius: 14px;
+  background: #fff;
+  color: #424242;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.restaurant-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(73, 85, 126, 0.08);
+}
+
+.restaurant-option.selected {
+  border-color: tomato;
+  box-shadow: 0 0 0 2px rgba(255, 99, 71, 0.12);
+}
+
+.restaurant-option-name {
+  color: #252525;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.restaurant-option-cuisine {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.restaurant-option-meta {
+  color: #49557e;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.catalog-status {
+  margin: 24px 0;
+  color: #49557e;
+}
+
+.catalog-error {
+  color: #b42318;
+}
